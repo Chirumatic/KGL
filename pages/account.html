@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KGL Personal Account</title>
+    <link rel="stylesheet" href="/css/account.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body style="background-image:url(/images/kgk.jpg); background-repeat: no-repeat; background-size: cover;">
+    <div class="container">
+      <aside>
+        <ul class="menu">
+          <li>
+            <a href="/pages/dash.html"><i class="fas fa-home"></i> Dashboard</a>
+          </li>
+          <li>
+            <a href="/pages/users.html"><i class="fas fa-users"></i> Users</a>
+          </li>
+          <li>
+            <a href="/pages/users.html"><i class="fas fa-briefcase"></i> Employers</a>
+          </li>
+          <li>
+            <a href="/pages/products.html"><i class="fas fa-file-alt"></i> Products</a>
+          </li>
+          <li>
+            <a href="/pages/index.html"><i class="fas fa-envelope"></i> Messages</a>
+          </li>
+          <li>
+            <a href="/pages/index.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+          </li>
+        </ul>
+      </aside>
+      <main>
+        <header>
+          <div class="user-greeting">Good morning, fdrichi@yahoo.com</div>
+        
+        </header>
+        <section class="content">
+          <div class="my-account">
+            <h2>My Account</h2>&nbsp;&nbsp;&nbsp;
+            <div class="personal-info">
+              <h3>Personal Information</h3>
+              <div class="form-group">
+                <label for="role">Role</label>
+                <input type="text" id="curp" name="curp" />
+              </div>
+              <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input
+                  type="text"
+                  id="firstName"
+                  name="firstName"
+                  value=""
+                />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input
+                  type="text"
+                  id="lastName"
+                  name="lastName"
+                  value=""
+                  
+                  
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value=""
+                />
+              </div>
+              <label for="phone">Enter your phone number:</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="0123-456-789"
+                pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}"
+                required
+              /><br /><br />
+              <small>Format: 0123-456-789</small><br /><br />
+              <button type="submit" class="update-button">Update Information</button>
+            </div>
+            
+            <div class="account-info">
+              <h3>Account Information</h3>
+              <div class="form-group">
+                <label for="role">Role:</label>
+                <span id="role">Standard User</span>
+                <a href="#">Request Role Change</a>
+              </div>
+              <div class="form-group">
+                <label for="role">Role:</label>
+                <span id="role">Standard User</span>
+                <a href="/password.html">Password reset</a>
+              </div>
+              
+            </div>
+              <div class="account-deletion">
+                <p>Once an account is deleted you can't restore it.</p>
+                <button type="button" class="delete-button">
+                  Delete Account
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

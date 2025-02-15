@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KGL Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/css/d.css">
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <nav class="col-md-3">
+            <div class="p-3">
+                <h3>Karibu Groceries LTD</h3>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/dash.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/dash.html">Sales</a>
+                    </li>
+                    
+                  
+                </ul>
+            </div>
+        </nav>
+
+        <main role="main" class="col-md-9 ml-sm-auto px-4">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                <h1 class="h2">Dashboard</h1>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                Overall Sales Summary
+                            </div>
+                            <div class="card-body">
+                                <p>Total Sales: UgX <span id="total-sales">0</span></p>
+                                <p>Total Tonnage Sold: <span id="total-tonnage">0</span> Kg</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                Stock Levels
+                            </div>
+                            <div class="card-body">
+                                <table class="table" border="1">
+                                    <thead>
+                                        <tr>
+                                            <th>Produce</th>
+                                            <th>Stock (Kg)</th>
+                                             <th>Supplier</th>
+                                        </tr>
+                                        <tr>
+                                             <td>Beans</td>
+                                             <td>500</td>
+                                             <td>Maganjo Farm</td>
+                                        </tr>
+                                        <tr>
+                                             <td>Grain Maize</td>
+                                             <td>300</td>
+                                             <td>Matugga Farm</td>
+                                        </tr>
+                                        <tr>
+                                             <td>Cow Peas</td>
+                                             <td>200</td>
+                                             <td>AGRIBIO</td>
+
+                                        </tr>
+                                        <tr>
+                                             <td>G-nuts</td>
+                                             <td>400</td>
+                                             <td>Coopérative Agricole Vendéenne (CAVAC)</td>
+                                        </tr>
+                                        <tr>
+                                             <td>Soya Beans</td>
+                                             <td>600</td>
+                                             <td>Cereal Growers Association</td>
+                                        </tr>
+                                        
+                                    </thead>
+                                    <tbody id="stock-table-body">
+                                        </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                Recent Sales
+                            </div>
+                            <div class="card-body">
+                                <table class="table" border="1">
+                                    <thead>
+                                        <tr>
+                                            <th>Produce</th>
+                                            <th>Tonnage (Kg)</th>
+                                            <th>Amount (UgX)</th>
+                                            <th>Buyer</th>
+                                            <th>Date</th>
+                                        </tr>
+                                        <tr>
+                                             <td>Beans</td>
+                                             <td>500</td>
+                                             <td>500000</td>
+                                             <td>Jane Smith</td>
+                                             <td>2024-03-07</td>
+                                        </tr>
+                                        <tr>
+                                             <td>Grain Maize</td>
+                                             <td>1000</td>
+                                             <td>1000000</td>
+                                             <td>John Doe</td>
+                                             <td>2024-03-06</td>
+                                        </tr>
+                                        <tr>
+                                             <td>Cow Peas</td>
+                                             <td>750</td>
+                                             <td>750000</td>
+                                             <td>Emily Johnson</td>
+                                             <td>2024-03-05</td>
+                                        </tr>
+                                        <tr>
+                                             <td>G-nuts</td>
+                                             <td>2000</td>
+                                             <td>2000000</td>
+                                             <td>Michael Brown</td>
+                                             <td>2024-03-04</td>
+                                        </tr>
+                                        <tr>
+                                             <td>Soya Beans</td>
+                                             <td>1500</td>
+                                             <td>1500000</td>
+                                             <td>Sarah Wilson</td>
+                                             <td>2024-03-03</td>
+                                        </tr>
+                                        <tr>
+                                             <td>Beans</td>
+                                             <td>300</td>
+                                             <td>300000</td>
+                                             <td>David Garcia</td>
+                                             <td>2024-03-02</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="recent-sales-table-body">
+                                        </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </main>
+    </div>
+</div>
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+</body>
+</html>
