@@ -83,7 +83,7 @@ header {
 }
 
 .my-account > div {
-    flex: 1 1 45%; /* Adjust as needed */
+    flex: 1 1 45%; 
     margin-bottom: 20px;
     padding: 20px;
     border: 1px solid #ddd;
